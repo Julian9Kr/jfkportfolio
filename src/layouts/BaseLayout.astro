@@ -3,42 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JF Krüger – AI Visuals</title>
+    <title>Julian F. Krueger – AI Visuals</title>
     <style>
-      html, body {
+      * {{
+        box-sizing: border-box;
+      }}
+      body {{
         margin: 0;
-        padding: 0;
-        font-family: sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         background: #0e0e0e;
         color: white;
-        max-width: 100vw;
         overflow-x: hidden;
-      }
-      header h1 {
+      }}
+      .hero {{
+        position: relative;
+        text-align: center;
+      }}
+      .hero img {{
+        width: 100%;
+        height: auto;
+        max-height: 80vh;
+        object-fit: cover;
+      }}
+      .hero-text {{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 1rem 2rem;
+        border-radius: 12px;
+      }}
+      .hero-text h1 {{
+        margin: 0;
         font-size: 2rem;
-        margin-bottom: 0.5rem;
-      }
-      .grid {
+      }}
+      .gallery {{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 2rem;
         padding: 4rem 2rem;
-        justify-content: center;
         max-width: 1400px;
         margin: 0 auto;
-      }
-      .grid img {
+      }}
+      .image-wrapper img {{
         width: 100%;
-        max-width: 100%;
         height: auto;
-        border-radius: 12px;
+        aspect-ratio: 16 / 9;
         object-fit: cover;
-      }
-      @media (max-width: 900px) {
-        .grid {
-          grid-template-columns: 1fr;
-        }
-      }
+        border-radius: 12px;
+      }}
     </style>
   </head>
   <body>
