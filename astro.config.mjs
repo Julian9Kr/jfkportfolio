@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://jfkrueger.ai',
+  // Your configuration options here
+  site: 'https://jfkrueger.com',
 });
